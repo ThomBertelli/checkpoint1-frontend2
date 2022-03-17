@@ -3,7 +3,7 @@ let inputDescricao = document.querySelector('#descricao')
 let inputImagem = document.querySelector('#imagem')
 let botaoEnviar = document.querySelector('#enviar')
 
-let cardsRefence = document.querySelector('#cards')
+let cardsReference = document.querySelector('#cards')
 
 let posts = [
 ]
@@ -21,14 +21,15 @@ botaoEnviar.addEventListener('click',function(event){
     })
     event.preventDefault()
     console.log(posts)
+
+    for(let post of posts){
+        cardsReference.innerHTML+=`
+        <div class="item">
+                <img src="${post.imagem}">
+                <h2> ${post.titulo}</h2>
+                <p>${post.descricao}</p>
+            </div>
+        `
+    }
 })
 
-// for(let post of posts){
-//     conteinerReference.innerHTML+=`
-//     <div class="item">
-//             <img src="${post.imagem}">
-//             <h2> ${post.titulo}</h2>
-//             <p>${post.descricao}</p>
-//         </div>
-//     `
-// }
