@@ -8,15 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-        <input id="titulo" type="text" placeholder="Título">
-        <input id="descricao" type="text" placeholder="Descrição">
-        <input id="imagem" type="text" placeholder="Url da Imagem">
-        <button id="enviar" type="submit">Submit</button>
-    </form>
-
-    <div id="cards"></div>
-
+    <h1>Jogos Classicos do PlayStation 1</h1>
+    
+    <div class="formulario">
+        <form action="" >
+            <fieldset>
+                <legend> Insira mais jogos clássicos:</legend>
+                <input id="titulo" type="text" placeholder="Título">
+                <input id="descricao" type="text" placeholder="Descrição">
+                <input id="imagem" type="text" placeholder="Url da Imagem">
+                <button class="myButton" id="enviar" type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div id="cards" class="container">
+        <div class="item">
+            <img src="https://s2.glbimg.com/2Z6oli2mgO53Pqsqj8weoMSQxCg=/0x0:695x420/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2016/09/27/nintendo-64-20-anos-resident-evil-2.jpg">
+            <h2>The Resident Evil 2</h2>
+            <p>Quase 100% dos fãs da franquia consideram The Resident Evil 2 o melhor de todos os títulos. Isso pode se confirmar pelo remake do game lançado recentemente para a atual geração. Esse jogo foi mesmo revolucionário, permitindo que os jogadores controlassem duas personagens diferentes: Claire e o lendário Leon.
+            A presença de dois pontos de vista diferentes, somada à maior liberdade de exploração em Raccoon City tornaram esse título uma verdadeira obra-prima na época. Os zumbis estavam ainda mais insanos do que no game anterior, oferecendo um nível de desafio absurdo aos jogadores.</p>
+        </div>
+        
+        <div class="item">
+            <img src="https://www.outerspace.com.br/wp-content/uploads/2020/03/castlevania_sotn.jpg">
+            <h2>Castlevania: Symphony of The Night</h2>
+            <p>Esse é um jogo que tem marcado gerações desde 1997, ano de seu lançamento. Na época foi um marco para a franquia, já que deixou de ser jogado por fases. É um jogo com fortes elementos de RPG, que progride cenário por cenário, cumprindo tarefas, enfrentando inimigos e coletando itens e poderes importantes.
+            Sua abertura é genial e inesquecível, com diálogos muito bem montados. Após a abertura, controlando Alucard, filho de Drácula, o jogador precisa explorar um castelo enorme, em busca de evoluir a personagem ao máximo. É um game cheio de desafios e de obstáculos, sendo considerado um dos títulos mais difíceis do PlayStation 1.</p>
+        </div>
+        
+        <div class="item">
+            <img src="https://jogoveio.com.br/wp-content/uploads/2018/09/Metal-Gear-Solid.jpg">
+            <h2>Metal Gear Solid</h2>
+            <p>Foi em Metal Gear Solid que o agente Solid Snake foi apresentado ao mundo. Mesmo quem nunca jogou um título da franquia certamente conhece ou já ouviu falar dessa personagem. Criado por Hideo Kojima e lançado em 1998, esse jogo foi um dos expoentes iniciais do gênero ação furtiva. A trama é excelente, com cutscenes incríveis para a tecnologia disponível na época.
+            Não podemos deixar de falar também de Psycho Mantis, o vilão máximo do primeiro Metal Gear. Ele ficou na memória dos jogadores por conversar direto com quem estava atrás do controle. Os títulos atuais da franquia são maravilhosos em tudo, porém devemos respeito eterno ao jogo que iniciou tudo.</p>
+        </div>
+    </div>
     <script src="./main.js"></script>
 
 </body>

@@ -5,16 +5,15 @@ let botaoEnviar = document.querySelector('#enviar')
 
 let cardsReference = document.querySelector('#cards')
 
-let posts = [
-]
+
 
 botaoEnviar.addEventListener('click',function(event){
-    
+    let posts = []
     let inputTituloAtual = document.querySelector('#titulo').value
     let inputDescricaoAtual = document.querySelector('#descricao').value
     let inputImagemAtual = document.querySelector('#imagem').value
 
-    posts.push ({
+    posts.unshift ({
         titulo: inputTituloAtual,
         descricao: inputDescricaoAtual,
         imagem: inputImagemAtual
@@ -22,14 +21,16 @@ botaoEnviar.addEventListener('click',function(event){
     event.preventDefault()
     console.log(posts)
 
-    for(let post of posts){
-        cardsReference.innerHTML+=`
-        <div class="item">
-                <img src="${post.imagem}">
-                <h2> ${post.titulo}</h2>
-                <p>${post.descricao}</p>
-            </div>
-        `
-    }
+    
+for(let post of posts){
+    cardsReference.innerHTML+=`
+    <div class="item">
+            <img src="${post.imagem}">
+            <h2> ${post.titulo}</h2>
+            <p>${post.descricao}</p>
+        </div>
+    `
+}
+    
 })
 
